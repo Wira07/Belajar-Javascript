@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wira Sukma Saputra</title>
+  </head>
+  <body>
+    <script>
+      alert('selamat datang');
+      var nama = true;
+      while (nama === true) {
+        var panggilan = prompt('masukan nama anda : ');
+        alert('halo' + panggilan);
+
+        nama = confirm('apakah anda sudah yakin??');
+      }
+      alert('terima kasih banyak atas perhatianya');
+      var wira = 1;
+      while (wira <= 10) {
+        console.log('No angkot. ' + wira + ' berjalan dengan mulus');
+        wira++;
+      }
+      function sukma() {
+        document.getElementById('alat').innerHTML = 'hello wira sukma saputra';
+      }
+    </script>
+  </body>
+  <p id="alat">
+    <button onclick="sukma()">Klik</button>
+  </p>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aqua;
+      }
+      h1 {
+        animation: h1 2s;
+      }
+      @keyframes h1 {
+        0% {
+          opacity: 0;
+          transform: scale(0);
+          font-size: 50px;
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+          font-size: 100px;
+        }
+      }
+    </style>
+    <script>
+      function tombol() {
+        document.getElementById('wira').innerHTML = 'wira sukma saputra';
+      }
+      function tombol2() {
+        document.getElementById('wira2').innerHTML = 'wira sukma saputra 2';
+      }
+      function tombol3() {
+        document.getElementById('wira3').innerHTML = 'ini adalah bahasa pemograman tingkat tinggi';
+      }
+      function tombol4() {
+        document.getElementById('wira4').innerHTML = 'selamat datang di web progaming tingkat wira sukma saputra';
+      }
+      function tombol5() {
+        document.getElementById('wira5').innerHTML = 'saya mau pergi ke pasar bersama ayah saya membeli makanan';
+      }
+      function tombol6() {
+        document.getElementById('wira6').innerHTML = 'aku sedang di daerah kampus uniku satu untuk sekarang';
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Wira Sukma Saputra</h1>
+    <p id="wira">
+      <button onclick="tombol()">Klik</button>
+    </p>
+    <p id="wira2">
+      <button onclick="tombol2()">Klik</button>
+    </p>
+    <p id="wira3">
+      <button onclick="tombol3()">mulai</button>
+    </p>
+    <p id="wira4">
+      <button onclick="tombol4()">start</button>
+    </p>
+    <p id="wira5">
+      <button onclick="tombol5()">dimulai</button>
+    </p>
+    <p id="wira6">
+      <button onclick="tombol6()">sekarang</button>
+    </p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Silahkan Klik</button>
+    <p id="demo"></p>
+  </body>
+</html>

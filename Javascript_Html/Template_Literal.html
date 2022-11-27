@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const mhs = {
+        firstname: "Wira",
+        lastname: "Sukma Saputra",
+        umur: 20,
+        alamat: {
+          status: "Mahasiswa",
+          negara: "Indonesia",
+        },
+      };
+      const {
+        firstname,
+        lastname,
+        umur,
+        alamat: { jalan, status, negara },
+      } = mhs;
+
+      console.log("Hai Perkenalkan Saya,", firstname, lastname, "Umur Saya ", umur, "Tahun,", "Pekerjaan saya sebagai", status, "Negara asal,", negara);
+      //   var mhs = {
+      //     nama: "Wira Sukma Saputra",
+      //     umur: 20,
+      //     lulus: true,
+      //     IP_Semester: [3.5, 3.89, 3.9],
+      //     IP_Kumulatif: function () {
+      //       var total = 0;
+      //       var PTI = this.IP_Semester;
+      //       for (var i = 0; i < PTI.length; i++) {
+      //         total += PTI[i];
+      //       }
+      //       return total / PTI.length;
+      //     },
+      //   };
+      //   mhs.IP_Kumulatif();
+    </script>
+  </head>
+  <body></body>
+</html>

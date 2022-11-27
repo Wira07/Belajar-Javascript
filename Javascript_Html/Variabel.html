@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wira sukma saputra</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function tombol() {
+        document.getElementById('wira').innerHTML = 'wira sukma saputra';
+      }
+      function gugun() {
+        document.getElementById('huhu').innerHTML = 'gugun';
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Wira Sukma Saputra</h1>
+    <p id="wira">
+      <button onclick="tombol()">Klik</button>
+    </p>
+    <p id="huhu">
+      <button onclick="gugun()">wira sukma saputra</button>
+    </p>
+    <div id="main"></div>
+    <div class="jajan"></div>
+
+    <script>
+      var angka = 450;
+      var angka2 = 876;
+      var text = 53;
+      var text2 = 77;
+
+      angka++;
+      // angka2 = angka2 + angka;
+      angka2 += angka;
+      text2 += text;
+
+      document.getElementById('main').innerHTML = text2;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="Alat"></p>
+    <script>
+      var mahasiswa_tidak_aktif = 15;
+      var siswa = 1;
+      var mahasiswa = 8;
+      while (siswa <= mahasiswa) {
+        console.log("siswa aktif " + siswa + " x ");
+        siswa++;
+      }
+
+      for (siswa = mahasiswa + 1; siswa <= mahasiswa_tidak_aktif; siswa++) {
+        console.log("Siswa aktif " + siswa + " siswa tidak aktif");
+      }
+      function wira() {
+        document.getElementById("jajan").innerHTML = "wira sukma saputra";
+      }
+    </script>
+    <script src="JavaScript.js"></script>
+  </body>
+  <p id="jajan">
+    <button onclick="wira()">Klik</button>
+  </p>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wira Sikma Saputra</title>
+    <!-- 
+       tipe data di java script
+       number
+       string
+       boolean
+       object
+       funcion
+       undefined
+     -->
+    <style>
+      body {
+        min-height: 2000px;
+      }
+      #wira {
+        font-size: 25px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wira"></div>
+    <script>
+      // nama di mulai dengan huruf atau $ atau
+      // nama boleh mengandung huruf, angka, underscore _ dan $ dollartr
+      // nama itu case sensitive
+      // ada 'reserved word yang tidak boleh dipakai'
+      // tipe data string
+      var text = "wira sukma";
+      var text2 = " saputra";
+      // tipe data integer/angka
+      var angka = 1000;
+      var angka2 = 123;
+      // kiri = nama -> kanan = nilai
+
+      // operator matematika + - * / %
+      var angka_baru = angka + angka2;
+      angka_baru++; // increment
+      angka_baru--; // decrement
+      var x = "wira sukma";
+      var y = "saputra";
+      var z = x + " " + y;
+      z = z.toUpperCase();
+      // z = z.substring(0, z.length - 1);
+      /*
+      1. memilih id wira
+      2. metode InnerHTTML = nulis kontent
+      */
+      //deklarasi variabel
+      // var x = 'wira sukma saputra';
+      // var y = 'ini adalah bahasa pemograman javascript dasar';
+      // var tabungan = 1000000;
+      document.getElementById("wira").innerHTML = z;
+    </script>
+  </body>
+</html>
