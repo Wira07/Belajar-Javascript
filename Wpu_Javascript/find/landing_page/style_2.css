@@ -1,0 +1,91 @@
+:root {
+  --primaryColor: #141ba1;
+  --secondaryColor: #aa8b56;
+  /* font */
+  --mainFont: "Open Sans", sans-serif;
+  --headingFont: "Merriweather", serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--mainFont);
+}
+.heading {
+  font-family: var(--headingFont);
+  font-size: 24px;
+  font-weight: 700;
+}
+.subheading {
+  font-weight: 300;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primaryColor);
+}
+.navbar-brand {
+  font-family: var(--headingFont);
+  font-weight: 500;
+}
+.navbar-brand span {
+  color: var(--secondaryColor);
+}
+.nav-link {
+  font-family: var(--headingFont);
+}
+.nav-link.active {
+  font-weight: 700;
+  color: var(--secondaryColor) !important;
+}
+.icons-home i {
+  font-size: 1.8rem;
+  color: var(--secondaryColor);
+}
+/* Home */
+.home {
+  background-color: var(--primaryColor);
+  height: 650px;
+  padding: 10rem;
+}
+.home .heading {
+  color: var(--secondaryColor);
+}
+.btn-home .btn-buy {
+  background-color: var(--secondaryColor);
+  font-family: var(--headingFont);
+  font-weight: 600;
+}
+.btn-home .btn-learn {
+  border: 2px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+  font-family: var(--headingFont);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    padding: 14rem;
+  }
+  .home .heading {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home .content-left {
+    padding-bottom: 40px;
+  }
+  .home .heading {
+    font-size: 36px;
+  }
+  .home .subheading {
+    font-size: 20px;
+  }
+  .home img {
+    right: 0;
+    bottom: -20;
+  }
+  .home .container .home .row {
+    height: 100%;
+  }
+}

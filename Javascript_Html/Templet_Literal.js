@@ -16,6 +16,7 @@ const {
 
 console.log("Hai Perkenalkan Saya,", firstname, lastname, "Umur Saya ", umur, "Tahun,", "Pekerjaan saya sebagai", status, "Negara asal,", negara);
 
+
 // var mhs = {
 //   nama: "Wira Sukma Saputra",
 //   umur: 20,

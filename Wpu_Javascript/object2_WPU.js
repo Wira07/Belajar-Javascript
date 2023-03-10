@@ -22,4 +22,4 @@ const wira = function (huhu) {
   console.log(`Nama saya ${huhu}`);
 };
 
-const jaja = (huhu) => console.log(`nama saya ${huhu}`);
+// const jaja = (huhu) => console.log(`nama saya ${huhu}`);

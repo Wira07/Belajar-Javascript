@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        display: flex;
+        overflow-x: scroll;
+        padding: 24px;
+        width: 300px;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 24px;
+        border-radius: 8px;
+        gap: 12px;
+        margin: 50px auto;
+      }
+      .container .item {
+        flex: 0 0 100%;
+        padding: 24px;
+        border-radius: 8px;
+        scroll-snap-align: start;
+      }
+      .container .item.satu {
+        background-color: red;
+        color: white;
+      }
+      .container .item.dua {
+        background-color: rgb(9, 9, 201);
+        color: white;
+      }
+      .container .item.tiga {
+        background-color: rgb(32, 13, 96);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item satu">
+        <h1>Wildan</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, exercitationem sapiente. Sint eaque, facere ab ex animi quaerat, quia vitae officiis odio voluptatem consequuntur, fugit mollitia quas nulla odit et.</p>
+      </div>
+      <div class="item dua">
+        <h1>Wildan</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, exercitationem sapiente. Sint eaque, facere ab ex animi quaerat, quia vitae officiis odio voluptatem consequuntur, fugit mollitia quas nulla odit et.</p>
+      </div>
+      <div class="item tiga">
+        <h1>Wildan</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, exercitationem sapiente. Sint eaque, facere ab ex animi quaerat, quia vitae officiis odio voluptatem consequuntur, fugit mollitia quas nulla odit et.</p>
+      </div>
+    </div>
+  </body>
+</html>

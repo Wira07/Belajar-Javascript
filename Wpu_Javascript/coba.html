@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #eee;
+        line-height: 1.65;
+        padding-bottom: 1000px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+      }
+      .layanan {
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      .layanan.satu {
+        background-color: red;
+      }
+      .layanan.dua {
+        background-color: blue;
+      }
+      .layanan.tiga {
+        background-color: grey;
+      }
+      @media (min-width: 600px) {
+        .container {
+          display: flex;
+          justify-content: space-between;
+        }
+        .layanan {
+          width: 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="layanan satu">
+        <h2>Wira Sukma Saputra</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere provident ullam incidunt repellat quisquam debitis, commodi voluptates nobis perspiciatis ad eveniet iusto id? Eum officiis quidem necessitatibus consequatur eaque
+          blanditiis.
+        </p>
+      </div>
+      <div class="layanan dua">
+        <h2>Wira Sukma Saputra</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima maiores possimus tempora tenetur rem vero doloremque. Dolorem unde corporis dignissimos quibusdam ratione, provident atque! Rem quasi nisi ab doloremque quod?</p>
+      </div>
+      <div class="layanan tiga">
+        <h2>Wira Sukma Saputra</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim officia deleniti quisquam, nemo incidunt laborum consequatur aliquid quos natus. Sapiente sunt explicabo, autem dolorum dicta quibusdam earum a qui delectus!</p>
+      </div>
+    </div>
+
+    <h1 id="judul">Wira Sukma Saputra</h1>
+    <h2 id="reza">Wira Sukma Saputra</h2>
+    <h2 class="lari">Chiaraa</h2>
+
+    <script>
+      const judul = document.getElementById("judul");
+      judul.style.color = "blue";
+      judul.style.fontSize = "40px";
+      judul.style.textAlign = "center";
+      judul.style.backgroundColor = "red";
+      judul.style.padding = "20px";
+
+      reza.style.backgroundColor = "blue";
+      reza.style.fontSize = "50px";
+      reza.style.color = "white";
+      reza.style.textAlign = "center";
+      reza.style.padding = "20px";
+      reza.innerHTML = "Wildan Pratiwi";
+
+      const lari = document.getElementsByClassName("lari")[0];
+      lari.style.backgroundColor = "grey";
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #eee;
+        padding-bottom: 1000px;
+        line-height: 1.65;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container-satu {
+        max-width: 800px;
+        margin: 50px auto;
+        /* display: flex;
+        justify-content: space-between; */
+      }
+      .layanan {
+        /* width: 30%; */
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .layanan.satu {
+        background-color: red;
+      }
+      .layanan.dua {
+        background-color: blue;
+      }
+      .layanan.tiga {
+        background-color: grey;
+      }
+      @media (min-width: 600px) {
+        .container-satu {
+          display: flex;
+          justify-content: space-between;
+        }
+        .layanan {
+          width: 30%;
+        }
+      }
+      .wrapp {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 5px solid brown;
+        overflow: hidden;
+        margin: 50px auto;
+      }
+      .wrapp img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 50px auto;
+        transition: 1s all;
+        cursor: pointer;
+      }
+      .wrapp img:hover {
+        transform: scale(1.65);
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Paragraf</p>
+      <p>Home</p>
+      <p>Service</p>
+    </div>
+
+    <div class="container-satu">
+      <div class="layanan satu">
+        <h1 class="h1">Wira Sukma Saputra</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nostrum repellat magnam a possimus explicabo neque hic nisi. Fugiat iusto pariatur quasi dolore hic porro a obcaecati perspiciatis quia at!</p>
+      </div>
+      <div class="layanan dua">
+        <h1 class="h1">Wira Sukma Saputra</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nostrum repellat magnam a possimus explicabo neque hic nisi. Fugiat iusto pariatur quasi dolore hic porro a obcaecati perspiciatis quia at!</p>
+      </div>
+      <div class="layanan tiga">
+        <h1 class="h1">Wira Sukma Saputra</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nostrum repellat magnam a possimus explicabo neque hic nisi. Fugiat iusto pariatur quasi dolore hic porro a obcaecati perspiciatis quia at!</p>
+      </div>
+    </div>
+    <div class="wrapp" id="wrapp">
+      <img src="../Hari Raya Idul Adha/mesjid.png" alt="" />
+    </div>
+
+    <section>
+      <ul id="kotak">
+        <li>WIra Sukma Saputra</li>
+        <li>WIra Sukma Saputra</li>
+        <li>WIra Sukma Saputra</li>
+      </ul>
+    </section>
+
+    <script>
+      const li = document.querySelectorAll("li");
+      for (let i = 0; i < li.length; i++) {
+        li.style.backgroundColor = "red";
+      }
+      // const li2 = document.querySelector("section#kotak ul li:nth-child(2)");
+
+      // li2.style.backgroundColor = "red";
+
+      // const p = document.getElementsByTagName("p");
+      // p[2].style.backgroundColor = "blue";
+      // p[0].style.backgroundColor = "red";
+      // p[1].style.backgroundColor = "grey";
+
+      // const h1 = document.getElementsByTagName("h1")[0];
+
+      // for (let i = 0; i < h1.length; i++) {
+      //   h1[i].style.backgroundColor = "red";
+      // }
+    </script>
+  </body>
+</html>

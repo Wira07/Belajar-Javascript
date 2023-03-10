@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wira Sukma Saputra</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #1f242d;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: #fff;
+        font-size: 70px;
+      }
+      span {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I'm <span class="typing"></span></h1>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".typing", {
+        strings: ["Wira Sukma Saputra", "UI / UX Design", "Frontend-Develover", "Blogger"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+      // Object literal
+      let mahasiswa = {
+        nama: "Wira Sukma Saputra",
+        energi: 10,
+        makan: function (porsi) {
+          this.energi += porsi;
+          console.log(`Halo ${nama}, selamat makan`);
+        },
+      };
+      const wira = {
+        nama: "Wildan Pratiwi",
+        energi: 21,
+        makan: function (porsi) {
+          this.nama += porsi;
+          console.log(`Halo ${this.nama} selamat makan`);
+        },
+      };
+      // function declaration
+      function dasar(nama, energi) {
+        let mhs = {};
+        mhs.nama = nama;
+        mhs.energi = energi;
+        mhs.makan = function (porsi) {
+          this.energi += porsi;
+          console.log(`Halo ${this.nama} selamat makan`);
+        };
+        mhs.main = function (jam) {
+          this.energi -= jam;
+          console.log(`Halo ${this.nama} selamat bermain`);
+        };
+        return mhs;
+      }
+      let sarjana = dasar("Wira Sukma Saputra", 30);
+      let skom = dasar("Wildan Pratiwi", 10);
+      // construtor
+      function Tahun(nama, energy) {
+        this.nama = nama;
+        this.energi = energy;
+        this.makan = function (porsi) {
+          this.energi += porsi;
+          console.log(`Halo ${this.nama} selamat dan sukses`);
+        };
+      }
+      let yuyun = new Tahun("Wira Sukma Wijaya", 40);
+      // Object Literal Alert
+      let dadu = {
+        firstname: "Wira",
+        middle: "Sukma",
+        lastname: "Saputra",
+        showname: function () {
+          alert(`Halo ${this.firstname} ${this.middle} ${this.lastname}`);
+        },
+        showname: function () {
+          dadu = confirm("Masukan ulang??");
+        },
+      };
+      dadu.showname();
+    </script>
+  </body>
+</html>

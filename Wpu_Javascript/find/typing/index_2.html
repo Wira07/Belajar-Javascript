@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Javascript</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Acme", sans-serif;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #010017;
+      }
+      .container {
+        width: 246px;
+        overflow: hidden;
+      }
+      .container .text {
+        position: relative;
+        color: blue;
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .container .text.first-text {
+        color: #fff;
+      }
+      .text.sec-text::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #010017;
+        border-left: 2px solid rgb(33, 33, 173);
+        animation: anime 4s steps(12) infinite;
+      }
+      @keyframes anime {
+        40%,
+        60% {
+          left: 100%;
+        }
+        100% {
+          left: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="text first-text">I'm a</span>
+      <span class="text sec-text"> Wira-DevOns</span>
+    </div>
+    <script>
+      const text = document.querySelector(".sec-text");
+      const textload = () => {
+        setTimeout(() => {
+          text.textContent = "Wira-DevOns";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "UI UX Design";
+        }, 4000);
+        setTimeout(() => {
+          text.textContent = "Front end Develover";
+        }, 8000);
+      };
+      textload();
+      setInterval(textload, 12000)
+    </script>
+  </body>
+</html>

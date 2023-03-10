@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo">Silahkan isi nama lengkap anda :</p>
+
+    <button ondblclick="test()">Submit</button>
+    <script>
+      function test() {
+        let i = document.getElementById("demo");
+        i.style.fontSize = "35px";
+        i.style.color = "Red";
+      }
+
+      let a = 10;
+      let b = 15;
+      console.log("Jika a = 10 dan b = 15, maka hasil penjumlahanya adalah : " + (a + b) + ", bukan " + (2 * a + b));
+    </script>
+  </body>
+</html>

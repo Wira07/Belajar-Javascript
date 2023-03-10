@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Landing</title>
+
+    <meta
+      name="description"
+      content="Website top up games termurah, tercepat dan terlengkap #1 Indonesia.
+"
+    />
+    <meta name="keywords" content="Top up game" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+
+    <link rel="shortcut icon" href="./assets/images/1673223049_69bbe02e8fff321eab9d.png" />
+    <link rel="stylesheet" href="./assets/plugins/simplebar/css/simplebar.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/icons.css" />
+    <link rel="stylesheet" href="./assets/css/horizontal-menu.css" />
+    <link rel="stylesheet" href="./assets/css/app-style.css" />
+    <link rel="stylesheet" href="./assets/css/style-main.css" />
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" />
+
+    <style>
+      :root {
+        --warna: #edf2f7;
+        --warna_2: #ffff;
+        --warna_3: #16c92a;
+        --warna_4: #16c92a;
+      }
+      body a {
+        color: var(--warna_2);
+      }
+      .mobile {
+        position: absolute;
+        left: 15.28%;
+        top: 52.27%;
+        padding: 20px 30px;
+        background: rgba(22, 201, 42, 0.29);
+        backdrop-filter: blur(1.5px);
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .row a {
+        color: #000;
+      }
+      .container {
+        color: #000;
+      }
+      .container h5 {
+        color: #000;
+      }
+      .container h5 p {
+        color: #000;
+      }
+      .col-lg-3 .col-sm-6 mt-3 {
+        color: #000;
+      }
+      .text-end {
+        text-align: end !important;
+      }
+      .content {
+        padding-top: 110px;
+        min-height: 446px;
+      }
+      .table-white tr th,
+      .table-white tr td {
+        color: #fff;
+        border-color: #242f3a;
+      }
+      label {
+        font-weight: 500;
+        text-transform: none;
+        color: #fff;
+      }
+      .fw-bold {
+        font-weight: 600;
+      }
+      .col-form-label {
+        padding-top: calc(0.375rem + 3px);
+      }
+      .card-tools {
+        float: right;
+        margin-top: -25px;
+      }
+      .cursor-pointer {
+        cursor: pointer;
+      }
+      .category a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+        border: 1px solid var(--warna_2);
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 6px;
+      }
+      .category a.active {
+        background: var(--warna_2);
+      }
+      .category a img {
+        width: 26px;
+        margin-right: 10px;
+      }
+      .menu-user a {
+        padding: 10px 16px;
+        border-radius: 5px;
+      }
+      .menu-user a:hover {
+        background: var(--warna_2);
+      }
+      .menu-user a i {
+        font-size: 19px;
+        width: 20px;
+      }
+      .menu-user {
+        margin-bottom: 26px;
+      }
+      .daterangepicker td,
+      .daterangepicker th {
+        color: #626262;
+      }
+      body {
+        background: var(--warna);
+      }
+      .border {
+        border-radius: 10px;
+        border-color: var(--warna);
+      }
+      .circle-primary {
+        background: var(--warna_3);
+      }
+      .bg-circle-primary {
+        background: var(--warna_3);
+      }
+
+      .navbar-dark .navbar-toggler {
+        background: #16c92a;
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+      .text-decoration-none {
+        background: #242f3a;
+      }
+      a {
+        color: #372a2a;
+      }
+      a:hover {
+        color: #372a2a;
+      }
+      .num-page {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px 4px;
+        text-align: center;
+        font-size: 18px;
+        background: var(--warna_3);
+        color: #fff;
+        line-height: 40px;
+        float: left;
+        font-weight: 600;
+        padding-right: ;
+      }
+      .bg-footer {
+        background-color: var(--warna);
+      }
+      .bg-theme1,
+      .bg-custom,
+      .card {
+        background: var(--warna_2) !important;
+      }
+      .btn-topup,
+      .back-to-top {
+        background: var(--warna_3);
+      }
+      .section {
+        background: var(--warna_2);
+      }
+      .radio-nominal + label,
+      .radio-nominale + label {
+        background: #fff;
+        color: var(--warna_2);
+        font-weight: 600px;
+        border: none !important;
+      }
+      .radio-nominale:checked + label,
+      .radio-nominal:checked + label {
+        background: var(--warna_3);
+        color: #fff;
+      }
+      .rounded-top {
+        border-top-left-radius: var(--bs-border-radius) !important;
+        border-top-right-radius: var(--bs-border-radius) !important;
+      }
+      .fs-12 {
+        font-size: 12px;
+      }
+      .fs-14 {
+        font-size: 14px;
+      }
+      .strip-primary {
+        background: var(--warna_3);
+      }
+      .btn-primary {
+        background: var(--warna_3) !important;
+        border-color: var(--warna_3) !important;
+      }
+      .sidenav {
+        background: var(--warna_2);
+      }
+      .radio-nominal:checked + label,
+      .table-white tr th,
+      .table-white tr td {
+        border-color: var(--warna);
+      }
+      .menu-utama div a {
+        margin: 0 4px;
+      }
+      .menu-utama div a:hover,
+      .menu-utama div a.active {
+        background: var(--warna_3);
+        border-radius: 14px 4px;
+      }
+      .navbar-collapse {
+        background: var(--warna_2);
+      }
+      .navbar-dark .navbar-nav .nav-link {
+        color: #000;
+      }
+      .menu-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      .menu-list li a {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px dashed var(--warna_2);
+        transition: 0.4s;
+      }
+      .menu-list li a:hover {
+        padding-left: 6px;
+      }
+      .table-responsive::-webkit-scrollbar {
+        width: 0;
+      }
+
+      .fab-container {
+        position: fixed;
+        bottom: 70px;
+        right: 10px;
+        z-index: 999;
+        cursor: pointer;
+      }
+      .fab-icon-holder {
+        width: 45px;
+        height: 45px;
+        bottom: 140px;
+        left: 10px;
+        color: #fff;
+        background: #ff0;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 30px;
+        z-index: 99999;
+      }
+      .fab-options {
+        list-style-type: none;
+        margin: 0;
+        position: absolute;
+        bottom: 48px;
+        left: -47px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        transform: scale(0);
+        transform-origin: 85% bottom;
+      }
+      .fab-options li {
+        display: flex;
+        justify-content: flex-start;
+        padding: 5px;
+      }
+      .fab:hover + .fab-options,
+      .fab-options:hover {
+        opacity: 1;
+        transform: scale(1);
+      }
+      #promoClose {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        line-height: 16px;
+        text-align: right;
+        padding: 24px 28px;
+        color: #fff;
+        z-index: 9992;
+        font-size: 17px;
+        opacity: 0.6;
+        text-decoration: none;
+      }
+
+      /* accordion */
+      #main {
+        margin: 50px 0;
+      }
+
+      #main #faq .card {
+        margin-bottom: 30px;
+        border: 0;
+      }
+
+      #main #faq .card .card-header {
+        border: 0;
+        -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+        box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+        border-radius: 2px;
+        padding: 0;
+      }
+
+      #main #faq .card .card-header .btn-header-link {
+        color: #fff;
+        display: block;
+        text-align: left;
+        background: var(--warna_3);
+        padding: 20px;
+        font-weight: bold;
+        font-size: 12px;
+      }
+
+      #main #faq .card .card-header .btn-header-link:after {
+        content: "\f107";
+        color: #fff;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 1000;
+        float: right;
+      }
+      footer {
+        color: #000;
+      }
+      #main #faq .card .card-header .btn-header-link.collapsed {
+        background: var(--warna_3);
+      }
+
+      #main #faq .card .card-header .btn-header-link.collapsed:after {
+        content: "\f106";
+        color: #fff;
+        font-family: "Font Awesome 5 Free";
+      }
+
+      #main #faq .card .collapsing {
+        background: var(--warna);
+        line-height: 30px;
+      }
+
+      #main #faq .card .collapse {
+        border: 0;
+      }
+
+      #main #faq .card .collapse.show {
+        background: var(--warna);
+        line-height: 30px;
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow-sm bg-custom">
+          <div class="container">
+            <a class="navbar-brand" href="http://localhost/cgames">
+              <img src="./assets/images/1673223049_69bbe02e8fff321eab9d.png" width="50" alt="logo icon" class="rounded" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu-utama" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="http://localhost/cgames">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                  Home
+                </a>
+                <a class="nav-item nav-link" href="./payment">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  Cek Pesanan
+                </a>
+                <a class="nav-item nav-link" href="./login">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <line x1="20" y1="8" x2="20" y2="14"></line>
+                    <line x1="23" y1="11" x2="17" y2="11"></line>
+                  </svg>
+                  Login Member
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="mb-4" style="padding-top: 110px">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="border-radius: 10px">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./assets/images/Banner.png" alt="First slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/images/Banner.png" alt="First slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/images/Banner.png" alt="First slide" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7"></div>
+          <div class="col-md-5">
+            <form action="" method="POST">
+              <div class="input-group">
+                <input type="text" class="form-control" autocomplete="off" placeholder="Mau topup games apa?" name="search" value="" />
+                <button class="btn btn-primary" type="submit">Cari</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-4 pb-4" id="populer">
+        <div class="row">
+          <div class="col-12 col-md-3 category">
+            <a id="populer" class="cursor-pointer active" onclick="select_tipe('mobile-legends');">
+              <!-- <img src="https://javagamestore.com/assets/tipe/1671701360_204521123dc06d4c9df8.png" alt=""> -->
+              <i class="fas fa-regular fa-fire mr-2"></i>
+              Populer
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pb-4">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Mobile Legends</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671937847_89e9dc8ac0cc765b6df2.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Free Fire Garena</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671937831_22c6c88a61a854648631.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Genshin impact</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671802953_d8772d93630ae8107eef.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Apex Legends</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671803187_969566bdbcb3e1cc0b28.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Dragon Raja</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671803359_502efa95d2cf0ea994f4.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Higgs Domino</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671937817_b026a639c4228d944791.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-4 pb-4" id="topup-games">
+        <div class="row">
+          <div class="col-12 col-md-3 category">
+            <a id="topup-games" class="cursor-pointer active" onclick="select_tipe('mobile-legends');">
+              <!-- <img src="https://javagamestore.com/assets/tipe/1671701360_204521123dc06d4c9df8.png" alt=""> -->
+              <i class="fas fa-solid fa-gamepad mr-2"></i>
+              TopUp Games
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pb-4">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">PUBG Mobile</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671802682_7525b8f700eb8fa232c3.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">call of duty mobile</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671803327_4945c56bac61d8ee3859.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Life After</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671803405_1508391c58bcb7ec94ff.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Sausage Man</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671803439_5eb1f353c98126bf42ed.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">tower of fantasy</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671803466_3f84fcb4449a7e33824f.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Omega Legends</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671937793_db7396790c5771954ff3.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-4 pb-4" id="proses-manual">
+        <div class="row">
+          <div class="col-12 col-md-3 category">
+            <a id="proses-manual" class="cursor-pointer active" onclick="select_tipe('mobile-legends');">
+              <!-- <img src="https://javagamestore.com/assets/tipe/1671701360_204521123dc06d4c9df8.png" alt=""> -->
+              <i class="fas fa-regular fa-microchip mr-2"></i>
+              Proses Manual
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pb-4">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Joki Rank Fast</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1672101364_5c856ce3fd50cfe94e22.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Promo Khusus</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671802682_7525b8f700eb8fa232c3.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+            <div class="col-md-3 col-4 text-center">
+              <div class="mobile">
+                <a href="mobile-legends.html" class="text-white">
+                  <p class="mb-0 fs-14">Gifs Skin</p>
+                </a>
+              </div>
+              <img src="./assets/images/games/1671937764_233b34f74e79e7e23da8.png" alt="" class="w-100 rounded" />
+              <a href="mobile-legends.html" class="text-decoration-none mb-4 d-block"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal PopUp -->
+
+      <div class="modal fade" id="modal-popup" tabindex="-1" aria-labelledby="modal-popupLabel" aria-modal="true" role="dialog" style="display: block">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 500px">
+          <div class="modal-content" style="background: var(--warna_5)">
+            <div class="modal-body">
+              <p><img width="100%" alt="" src="./assets/images/modal/1675853170_8024e437e95f0bd2e313.jpg" style="height: 100%; width: 100%" /></p>
+              <a id="promoClose" data-dismiss="modal" value="Close" href="#">×</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Modal PopUp -->
+
+      <footer id="aboutus" class="bg-footer shadow">
+        <img src="./assets/images/waves.png" alt="" width="100%" />
+        <div style="background: var(--warna_2); margin-top: -4px">
+          <div class="pt-5 pb-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-sm-3">
+                  <a href="#" class="d-flex">
+                    <img src="./assets/images/1673223049_69bbe02e8fff321eab9d.png" height="40" alt="logo icon" class="mb-3" />
+                    <h5 class="mt-2 ml-2">Games Shop</h5>
+                  </a>
+                  <p>Website top up games termurah, tercepat dan terlengkap #1 Indonesia.</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mt-3">
+                  <h5 class="pb-2 mt-4 ml-2">
+                    Games Terpopuler <br />
+                    <span class="fs-12">OTOMATIS</span>
+                  </h5>
+                  <div class="row">
+                    <div class="col-4 p-2">
+                      <a href="./games/mobile-legends">
+                        <img src="./assets/images/games/1671937847_89e9dc8ac0cc765b6df2.png" alt="" width="100%" style="border-radius: 10px" />
+                      </a>
+                    </div>
+                    <div class="col-4 p-2">
+                      <a href="./games/mobile-legends">
+                        <img src="./assets/images/games/1671937831_22c6c88a61a854648631.png" alt="" width="100%" style="border-radius: 10px" />
+                      </a>
+                    </div>
+                    <div class="col-4 p-2">
+                      <a href="./games/mobile-legends">
+                        <img src="./assets/images/games/1671802682_7525b8f700eb8fa232c3.png" alt="" width="100%" style="border-radius: 10px" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mt-3">
+                  <ul class="menu">
+                    <li><a href="./">Halaman Utama</a></li>
+                    <li><a href="./payment">Cek Pesanan</a></li>
+                    <li><a href="./price">Daftar Harga</a></li>
+                    <li><a href="./syarat-ketentuan">Syarat & Ketentuan</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-sm-3 mt-3">
+                  <h5 class="pb-2">Metode Pembayaran</h5>
+                  <div class="payment-channels-track marquee ml-1 d-flex">
+                    <div class="col-4 p-2">
+                      <a href="./games/mobile-legends">
+                        <img src="./assets/images/footer/alfamart.png" alt="" width="100%" style="border-radius: 10px" />
+                      </a>
+                    </div>
+                    <div class="col-4 p-2">
+                      <a href="./games/mobile-legends">
+                        <img src="./assets/images/footer/bca.png" alt="" width="100%" style="border-radius: 10px" />
+                      </a>
+                    </div>
+                    <div class="col-4 p-2">
+                      <a href="./games/mobile-legends">
+                        <img src="./assets/images/footer/bri.png" alt="" width="100%" style="border-radius: 10px" />
+                      </a>
+                    </div>
+
+                    <!-- <marquee width="100%" direction="left" scrollamount="5">
+                      <div class="footer-pc-marquee">
+                        <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/ovo.png" width="80" alt="ovo" loading="DS" src="./assets/images/footer/ovo.png" />
+                        <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/dana.png" width="80" alt="dana" loading="DS" src="./assets/images/footer/dana.png" />
+                        <img
+                          draggable="false"
+                          class="footer-pc-icon running-text ls-is-cached DSloaded rounded"
+                          data-src="./assets/images/footer/shopeepay.png"
+                          width="80"
+                          alt="shopeepay"
+                          loading="DS"
+                          src="./assets/images/footer/shopeepay.png"
+                        />
+                        <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/gopay.png" width="80" alt="gopay" loading="DS" src="./assets/images/footer/gopay.png" />
+                        <img
+                          draggable="false"
+                          class="footer-pc-icon running-text ls-is-cached DSloaded rounded"
+                          data-src="./assets/images/footer/alfamart.png"
+                          width="80"
+                          alt="alfamart"
+                          loading="DS"
+                          src="./assets/images/footer/alfamart.png"
+                        />
+                        <img
+                          draggable="false"
+                          class="footer-pc-icon running-text ls-is-cached DSloaded rounded"
+                          data-src="./assets/images/footer/indomaret.png"
+                          width="80"
+                          alt="indomaret"
+                          loading="DS"
+                          src="./assets/images/footer/indomaret.png"
+                        />
+                        <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/qris.png" width="80" alt="qris" loading="DS" src="./assets/images/footer/qris.png" />
+                      </div>
+                    </marquee>
+                    <marquee width="100%" direction="left" scrollamount="5">
+                      <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/balance.png" width="80" alt="balance" loading="DS" src="./assets/images/footer/balance.png" />
+                      <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/bri.png" width="80" alt="bri" loading="DS" src="./assets/images/footer/bri.png" />
+                      <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/mandiri.png" width="80" alt="mandiri" loading="DS" src="./assets/images/footer/mandiri.png" />
+                      <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/bca.png" width="80" alt="bca" loading="DS" src="./assets/images/footer/bca.png" />
+                      <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/bsi.png" width="80" alt="bsi" loading="DS" src="./assets/images/footer/bsi.png" />
+                      <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/bni.png" width="80" alt="bni" loading="DS" src="./assets/images/footer/bni.png" />
+                      <img draggable="false" class="footer-pc-icon running-text ls-is-cached DSloaded rounded" data-src="./assets/images/footer/cimb.png" width="80" alt="cimb" loading="DS" src="./assets/images/footer/cimb.png" />
+                    </marquee> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-theme1 text-center pb-4">Copyright © 2022 Landing. All Rights Reserved</div>
+      </footer>
+    </div>
+
+    <a href="javaScript:void();" class="back-to-top">
+      <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <!--End wrapper-->
+    <!-- Bootstrap core JavaScript-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- simplebar js -->
+    <script src="./assets/plugins/simplebar/js/simplebar.js"></script>
+    <!-- Custom scripts -->
+    <!--<script src="./assets/js/app-script.js"></script>-->
+    <script src="./assets/plugins/summernote/dist/summernote-bs4.min.js"></script>
+    <!--Select Plugins Js-->
+    <script src="./assets/plugins/select2/js/select2.min.js"></script>
+    <!--Data Tables js-->
+    <script src="./assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        setTimeout(function () {
+          $("#modal-popup").modal("show");
+
+          setTimeout(function () {
+            $("#modal-popup").modal("hide");
+          }, 15000);
+        }, 1000);
+      });
+    </script>
+
+    <script>
+      // $(document).ready(function() {
+      //     $('#default-datatable').DataTable();
+      // });
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <div style="display: none" class="ubey-RecordingScreen-count-down ubey-RecordingScreen-count-down-container">
+      <style>
+        .ubey-RecordingScreen-count-down-container {
+          position: fixed;
+          height: 100vh;
+          width: 100vw;
+          top: 0;
+          left: 0;
+          z-index: 9999999999999;
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .ubey-RecordingScreen-count-down-content {
+          position: absolute;
+          display: flex;
+          top: 50%;
+          left: 50%;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          height: 15em;
+          width: 15em;
+          transform: translate(-50%, -100%);
+          background-color: rgba(0, 0, 0, 0.6);
+          border-radius: 50%;
+        }
+
+        #ubey-RecordingScreen-count-count {
+          font-size: 14em;
+          transform: translateY(-2%);
+        }
+      </style>
+      <div class="ubey-RecordingScreen-count-down-content">
+        <span id="ubey-RecordingScreen-count-count"></span>
+      </div>
+    </div>
+
+    <script></script>
+
+    <div class="fab-container">
+      <div class="fab fab-icon-holder" style="background-color: #fff; padding: 5px">
+        <img src="./assets/images/callcenter.png" class="img-fluid" alt="" style=" ;" />
+      </div>
+      <ul class="fab-options">
+        <li>
+          <a href="https://instagram.com" class="text-decoration-none" target="_blank">
+            <div class="fab-icon-holder bg-white">
+              <img src="./assets/images/sosmed/1671857194_16dc07e9d16ac4218241.png" width="45" style="margin-top: -8px" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/6285293026542" class="text-decoration-none" target="_blank">
+            <div class="fab-icon-holder bg-white">
+              <img src="./assets/images/sosmed/1671857163_bf68a6b5428b25c15094.png" width="45" style="margin-top: -8px" />
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="act-btn-top text-decoration-none" onclick="toTop()" style="display: none; background-color: #bd4cae; bottom: 19px">
+        <i class="fas fa-angle-up mt-2"></i>
+      </a>
+    </div>
+  </body>
+</html>
