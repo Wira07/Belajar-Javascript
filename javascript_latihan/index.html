@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function car(brand, color, maxSpeed, chassisNumber) {
+        this.brand = brand;
+        this.color = color;
+        this.maxSpeed = maxSpeed;
+        this.chassisNumber = chassisNumber;
+      }
+
+      // Prototype & Method
+      car.prototype.drive = () => {
+        console.log(`${this.brand} ${this.color} is driving`);
+      };
+      car.prototype.reverse = () => {
+        console.log(`${this.brand} ${this.color}`);
+      };
+
+     
+      const car1 = new car("Suzuki", "Silver", 23400, "to-1");
+      const car2 = new car("Yamaha", "blue", 21000, "to-h");
+      const car3 = new car("Toyota", "red", 25000, "to-b");
+
+      car1.drive();
+      car2.drive();
+      car3.drive();
+
+      console.log(car1);
+      console.log(car2);
+      console.log(car3);
+    </script>
+  </body>
+</html>

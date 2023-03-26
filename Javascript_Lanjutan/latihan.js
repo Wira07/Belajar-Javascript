@@ -1,5 +1,3 @@
-const { f } = require("feather-icons");
-
 // object literal
 const mahasiswa = {
   nama: "Wira Sukma Saputra",
@@ -10,7 +8,7 @@ const mahasiswa = {
   },
 };
 
-// Function Literak
+// Function Declaration
 function wira(nama, energi) {
   let belajar = {};
   belajar.nama = nama;
@@ -36,7 +34,7 @@ function dasar(Nama, Kelas) {
     console.log(`Halo ${this.nama} Selamat Bermain`);
   };
   return siswa;
-}
+} 
 let wildan = dasar("Wira", 100);
 const awal = {
   nama: "Wira Sukma Wijaya",
@@ -46,3 +44,19 @@ const awal = {
     console.log(`Halo ${this.nama} Selamat Makan`);
   },
 };
+
+let halo = {};
+halo.wira = function () {
+  console.log("halo");
+};
+halo.wira();
+
+let tambah = function (a, b) {
+  let total;
+  total = a + b;
+  return total;
+};
+
+function Angka(a, b) {
+  console.log(`Selamat ${Angka}`);
+}

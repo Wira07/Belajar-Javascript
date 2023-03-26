@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wira Sukma Saputra</title>
+  </head>
+  <body>
+    <script>
+      function car(brand, color, maxSpeed) {
+        this.brand = brand;
+        this.color = color;
+        this.maxSpeed = maxSpeed;
+      }
+
+      // make method
+      car.prototype.drive = function () {
+        console.log(` ${this.brand} ${this.color} `);
+      };
+      car.prototype.reverse = function () {
+        console.log(` ${this.brand} ${this.color}`);
+      };
+
+      car.prototype.turn = function () {
+        console.log(`${this.brand} ${this.color}`);
+      };
+
+      const wira = new car("Toyota", 200);
+      const alif = new car("Honda", 200);
+      const nono = new car("Suzuki", 350);
+
+      console.log(wira);
+      console.log(alif);
+      console.log(nono);
+    </script>
+  </body>
+</html>

@@ -11,10 +11,19 @@
   <body>
     <section id="particles-js">
       <div class="text">
-        <h2>Teknik Informatika 2021 A<br /><span>Selamat Hari Raya Idul Adha 1443 H</span></h2>
+        <h2>Teknik Informatika 2021 A<br /><span class="typing"></span></h2>
       </div>
       <div class="mesjid"></div>
     </section>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+      let typed = new Typed(".typing", {
+        strings: ["Selamat Hari Raya", "Idul Fitri", "1443 H"],
+        backSpeed: 100,
+        typeSpeed: 100,
+        loop: true,
+      });
+    </script>
     <script src="wira.js"></script>
     <script src="sukma.js"></script>
   </body>

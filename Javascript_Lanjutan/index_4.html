@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wira Sukma Saputra</title>
+  </head>
+  <body>
+    <script>
+        function mahasiswa(nama, energy) {
+          this.nama = nama;
+          this.energy = energy;
+        }
+        mahasiswa.prototype.makan = function (porsi) {
+          this.energy += porsi;
+          return `Halo ${this.nama} selamat makan`;
+        };
+        mahasiswa.prototype.main = function (jam) {
+          this.energy -= jam;
+          return `Halo ${this.nama} selamat bermain`;
+        };
+        mahasiswa.prototype.tidur = function (jam) {
+          this.energy += jam * 2;
+          return `Halo ${this.nama} selamat tidur`;
+        };
+
+        let wira = new mahasiswa("Wira Sukma Saputra", 21);
+
+      // class mahasiswa {
+      //   constructor(nama, energy) {
+      //     this.nama = nama;
+      //     this.energy = energy;
+      //   }
+
+      //   makan(porsi) {
+      //     this.energy += porsi;
+      //     return `Halo ${this.makan} selamat makan`;
+      //   }
+
+      //   main(jam) {
+      //     this.energy -= jam;
+      //     return `Halo ${this.nama} selamat makan`;
+      //   }
+
+      //   tidur(jam) {
+      //     this.energy += jam * 2;
+      //     return `Halo ${this.nama} selamat tidur`;
+      //   }
+      // }
+
+      // let Wira = new mahasiswa("Wira Sukma Saputra", 21);
+      // let Boby = new mahasiswa("Wildan Pratiwi", 19);
+
+      let mobil = {
+        merek: "Yamaha",
+        warna: "Biru",
+        kecepatan_maksimal: 2100,
+        kecepatan: function (speed) {
+          this.kecepatan_maksimal += speed;
+          console.log(`Halo ${this.merek} selamat jalan`);
+        },
+      };
+
+      const car = {
+        // properties
+        brand: "Ford",
+        color: "red",
+        maxSpeed: 200,
+        chassisNumber: "f-1",
+        // methods
+        drive: () => {
+          console.log("driving");
+        },
+        reverse: () => {
+          console.log("reversing");
+        },
+        turn: () => {
+          console.log("turning");
+        },
+      };
+
+      console.log(car.brand); // Ford
+      console.log(car.color); // red
+      console.log(car.maxSpeed); // 200
+      console.log(car.chassisNumber); // f-1
+
+      car.drive(); // driving
+      car.reverse(); // reversing
+      car.turn(); // turning
+    </script>
+  </body>
+</html>

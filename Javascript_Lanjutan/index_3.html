@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wira Sukma Saputa</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: #1f122d;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        font-size: 60px;
+        color: white;
+      }
+      span {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I'm <span class="Type"></span></h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+      const typed = new Typed(".Type", {
+        strings: ["Wira Sukma Saputra", "UI UX Design", "Frontend Develover"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+      const Method = {
+        makan: function (porsi) {
+          this.energy += porsi;
+          console.log(`Halo ${this.nama} Selamat Makan`);
+        },
+        main: function (jam) {
+          this.energy -= jam;
+          console.log(`Halo ${this.nama} Selamat bermain`);
+        },
+        tidur: function (jam) {
+          this.energy += jam * 2;
+          console.log(`Halo ${this.nama} Selamat tidurx`);
+        },
+      };
+
+      function nama(nama, energy) {
+        let mahasiswa = Object.create(Method);
+        mahasiswa.nama = nama;
+        mahasiswa.energy = energy;
+        return mahasiswa;
+      }
+      let tampil = nama("Wira Sukma Saputra", 20);
+    </script>
+  </body>
+</html>

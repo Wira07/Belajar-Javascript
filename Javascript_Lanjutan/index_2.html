@@ -23,6 +23,19 @@
         align-items: center;
         color: #fff;
       }
+      .netral {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 600;
+        background-image: linear-gradient(red, blue, yellow);
+      }
+      p {
+        font-size: 70px;
+      }
       h1 {
         font-size: 60px;
         font-weight: 500;
@@ -37,9 +50,18 @@
     <div class="container">
       <h1>I'm <span class="typing"></span></h1>
     </div>
+    <div class="netral">
+      <p>I'm <span class="kotak"></span></p>
+    </div>
     <script>
       const wira = new Typed(".typing", {
         strings: ["Wira Sukma Saputra", "UI / UX Design", "Frontend Develover"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+      const Wildan = new Typed(".kotak", {
+        strings: ["Javascript", "Java", "C++"],
         typeSpeed: 100,
         backSpeed: 100,
         loop: true,
@@ -56,7 +78,7 @@
         return jajan;
       }
       let sarjana = Memori("Wira Sukma Saputra", 88);
-     
+      
     </script>
   </body>
 </html>
