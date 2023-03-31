@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background: linear-gradient(135deg, #8d95a3, #7811ff);
+      }
+      .clock {
+        width: 550px;
+        height: 150px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .clock div {
+        width: 150px;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 60px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        border-radius: 5px;
+        box-shadow: 0px 5px 5px rgb(9, 15, 32);
+        transition: 1s;
+      }
+      .clock div:hover {
+        background-color: #1f242d;
+        color: #fff;
+        font-weight: bolder;
+      }
+      .clock span {
+        font-size: 90px;
+        color: #fff;
+        font-weight: bolder;
+      }
+      .container {
+        text-align: center;
+        margin-top: 180px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 55px;
+        font-weight: bolder;
+      }
+      .container span {
+        color: #0dff00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="type"></span>
+    </div>
+    <div class="clock">
+      <div id="hour">00</div>
+      <span>:</span>
+      <div id="minute">00</div>
+      <span>:</span>
+      <div id="seconds">00</div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script>
+      const hour = document.getElementById("hour");
+      const minute = document.getElementById("minute");
+      const seconds = document.getElementById("seconds");
+
+      const clock = setInterval(function time() {
+        const date_now = new Date();
+        const hr = date_now.getHours();
+        const min = date_now.getMinutes();
+        const sec = date_now.getSeconds();
+
+        // if (hr < 10) {
+        //   hr = "0" + hr;
+        // }
+        // if (min < 10) {
+        //   hr = "0" + min;
+        // }
+        // if (sec < 10) {
+        //   sec = "0" + sec;
+        // }
+
+        hour.textContent = hr;
+        minute.textContent = min;
+        seconds.textContent = sec;
+      }, 1000);
+
+      const type = new Typed(".type", {
+        strings: ["Wira Sukma Saputra", "Frontend Develover", "UI UX Design"],
+        backSpeed: 100,
+        typeSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

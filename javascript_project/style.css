@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #bac4d6, #2264de);
+}
+
+.clock {
+  width: 550px;
+  height: 150px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clock div {
+  position: relative;
+  background-color: #fff;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 1px 15px 5px rgb(93, 91, 91);
+  transition: 1s;
+}
+.clock div:hover {
+  background-color: #1f242d;
+  color: #fff;
+}
+.clock span {
+  font-size: 60px;
+  color: #fff;
+  font-weight: bolder;
+}
