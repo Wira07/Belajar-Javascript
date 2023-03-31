@@ -78,18 +78,23 @@
 //   console.log(`Mahasiwa terbaik ${g + 1} ${f}`);
 // });
 
-var nama = ["Wira", "Sukma", "Saputra"];
-nama.splice(1, 2);
-console.log(nama.join(" - "));
+// var nama = ["Wira", "Sukma", "Saputra"];
+// nama.splice(1, 2);
+// console.log(nama.join(" - "));
 
-var hasil = ["Gugun", "Ratna", "Wira", "Tio"];
-var tio = hasil.slice(1, 3);
-console.log(tio.join(" - "));
+// var hasil = ["Gugun", "Ratna", "Wira", "Tio"];
+// var tio = hasil.slice(1, 3);
+// console.log(tio.join(" - "));
 
-var yuyun = ["True", "False", "damage", "uniku"];
-var ratna = yuyun.slice(1, 3);
-console.log(ratna.join(" - "));
+// var yuyun = ["True", "False", "damage", "uniku"];
+// var ratna = yuyun.slice(1, 3);
+// console.log(ratna.join(" - "));
 
-Array = ["Wira", "Sukma", "Saputra"];
-Array.splice(2, 0, "Yuyun Yustina");
-console.log(Array.join(" - "));
+// Array = ["Wira", "Sukma", "Saputra"];
+// Array.splice(2, 0, "Yuyun Yustina");
+// console.log(Array.join(" - "));
+
+let mahasiswa = ["wira", "sukma", "saputra"];
+
+let siswa = mahasiswa.map((nama) => nama.length);
+console.table(siswa);

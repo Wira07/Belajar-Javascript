@@ -87,3 +87,26 @@ function Wildan() {
   Nim();
 }
 Wildan();
+
+function init() {
+  let nama = "Wira Sukma Saputra kamu kuat ya"; // local variable
+  function tampilNama() {
+    // inner function (closure)
+    console.log(`Halo ${nama}`);
+  }
+  return tampilNama;
+  // tampilNama();
+  // console.log(tampilNama());
+}
+let panggilNama = init();
+panggilNama();
+
+function tambah() {
+  let x = 17;
+  function table() {
+    let y = 15;
+    console.table(x + y);
+  }
+  table();
+}
+tambah();

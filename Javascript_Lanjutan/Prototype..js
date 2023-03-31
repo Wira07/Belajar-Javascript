@@ -21,7 +21,7 @@ let agum = new mahasiswa("Wira Sukma Saputra", 20);
 
 mahasiswa.prototype.cinta = function (sayang) {
   this.energy += sayang;
-  return `Halo ${this.nama} Selamat Cinta`;
+  return `Halo ${this.nama} Selamat Cinta kasih`;
 };
 // versi class
 class mahasiswa1 {
