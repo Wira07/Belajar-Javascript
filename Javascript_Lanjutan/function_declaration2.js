@@ -30,7 +30,7 @@ let hadir1 = wira("Sukma", 50);
 //     this.energy += porsi;
 //     return `Halo ${this.nama} selamat makan`;
 //   },
-//   main: function (jam) {
+//   main: function (jam) { 
 //     this.energy -= jam;
 //     return `Halo ${this.nama} selamat bermain`;
 //   },
@@ -51,7 +51,7 @@ let hadir1 = wira("Sukma", 50);
 // let wira = new siswa("Wira Sukma Saputra", 20);
 // function nama(nama, energy) {
 //   this.nama = nama;
-//   this.energy = energy;
+//   this.energy = energy;  
 // }
 
 // nama.prototype.makan = (porsi) {

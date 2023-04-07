@@ -94,7 +94,32 @@
 // Array.splice(2, 0, "Yuyun Yustina");
 // console.log(Array.join(" - "));
 
-let mahasiswa = ["wira", "sukma", "saputra"];
+// let mahasiswa = ["wira", "sukma", "saputra"];
 
-let siswa = mahasiswa.map((nama) => nama.length);
-console.table(siswa);
+// let siswa = mahasiswa.map((nama) => nama.length);
+// console.table(siswa);
+
+let mahasiswa = {
+  nama: "Wira Sukma Saputra",
+  energy: 30,
+  makan: function (porsi) {
+    this.energy += porsi;
+    console.log(`Halo ${this.nama} selamat makan`);
+  },
+};
+
+console.log(mahasiswa);
+
+function nama(nama, energy) {
+  let mahasiswa = {};
+  mahasiswa.nama =nama;
+  mahasiswa.energy = energy;
+  mahasiswa.makan = function (porsi) {
+    this.energy += energy;
+    console.log(`Halo ${this.nama} selamat makan`);
+  };
+  return mahasiswa;
+}
+
+let wira = nama("Wira Sukma Saputra", 40);
+let wira2 = nama("Wira Sukma Saputra", 50);
