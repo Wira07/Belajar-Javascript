@@ -30,6 +30,24 @@ function selamat(day) {
   }
 }
 
+function adra(hari) {
+  switch (hari) {
+    case 0: {
+      let nama = "Wira Sukma Saputra";
+      console.log(nama);
+      break;
+    }
+  }
+}
+function saya(day) {
+  switch (day) {
+    case 0: {
+      let nama = "Wira Sukma Saputra";
+      console.log(nama);
+      break;
+    }
+  }
+}
 (function () {
   let nama = "realme 15";
   console.log(nama);
@@ -57,6 +75,15 @@ function dasar() {
 }
 dasar();
 
+function ayang() {
+  const nama = "Wira Sukma Saputra";
+  if (true) {
+    const nama = "Wijaya Kusuma Kuningan";
+    console.log(nama);
+  }
+  console.log(nama);
+}
+ayang();
 const typed = new Typed(".typing", {
   strings: ["Wira", "Sukma", "Saputra"],
   backSpeed: 100,
@@ -99,3 +126,47 @@ surga.prototype.makan = function (porsi) {
 
 let array = [1, 2, 9, 4, 5];
 console.log(array.reverse());
+
+function mahasiswa(nama, nim, alamat) {
+  this.nama = nama;
+  this.nim = nim;
+  this.alamat = alamat;
+  this.panggil = function () {
+    console.log(`halo nama saya ${this.nama}, nim saya ${this.nim}, dan alamat saya ${this.alamat}`);
+  };
+
+  setInterval(() => {
+    console.log(this.alamat++);
+  }, 500);
+
+  const ambil = new mahasiswa();
+  console.log(ambil);
+  ambil.panggil();
+
+  const manusia = {
+    nama: "Mahasiswa",
+    nim: "20210810075",
+    jurusan: "Teknik Informatika",
+    alamat: {
+      kota: "Kuningan",
+      negara: "Indonesia",
+    },
+  };
+
+  const main = ({
+    nama,
+    nim,
+    jurusan,
+    alamat: { kota, negara },
+  } = manusia);
+
+  (function () {
+    let nama = "Wira Sukma Saputra";
+    console.log(nama);
+  });
+}
+
+const nama = document.querySelector(".nama");
+nama.addEventListener(".click", function(){
+  console.log("halo");
+})
