@@ -45,3 +45,16 @@ const setIntervala = function () {
 
 const materi = new setIntervala();
 
+const rizal = function () {
+  console.log(`Halo nama saya ${this.nama}`);
+};
+const neni = new rizal("Wira");
+
+let mama = [1, 3, 5, 2, 7, 8, 2, 2, 9];
+const p = nama.map(function (r) {
+  return r * 2;
+});
+
+setInterval(() => {
+  console.log(this);
+}, 100);

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wira Sukma Saputra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Viga&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        background: #1f242d;
+      }
+      .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: #fff;
+      }
+      span {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I'm <span class="typing"></span></h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      const wira = new Typed(".typing", {
+        strings: ["Wira", "Sukma", "Saputra"],
+        backSpeed: 100,
+        typeSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

@@ -17,6 +17,10 @@ const mahasiswa = function () {
     console.log(this.age++);
   })
 
+  setInterval(() => {
+    
+  }, 500);
+
  
 };
 

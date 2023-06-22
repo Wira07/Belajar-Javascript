@@ -91,6 +91,13 @@ const typed = new Typed(".typing", {
   loop: true,
 });
 
+const dada = new Typed(".lulu", {
+  strings: ["Wira", "Sukma", "Saputra"],
+  backSpeed: 100,
+  typeSpeed: 100,
+  loop: true,
+});
+
 // closure
 function sukma() {
   const nilai = 21;
@@ -167,6 +174,6 @@ function mahasiswa(nama, nim, alamat) {
 }
 
 const nama = document.querySelector(".nama");
-nama.addEventListener(".click", function(){
+nama.addEventListener(".click", function () {
   console.log("halo");
-})
+});

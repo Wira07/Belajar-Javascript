@@ -42,6 +42,15 @@ for (let d = 0; d < acak.length; d++) {
 }
 console.log(simpan);
 
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const siswa = [];
+for (let r = 0; r < angka.length; r++) {
+  if (angka[r] >= 3) {
+    siswa.map(angka[r]);
+  }
+}
+console.log(siswa);
+
 const saya = [2, 5, 3, 2, 6, 6, 6, 7, 8];
 const rambo = saya.map(function (dadan) {
   return dadan * 6;
@@ -62,4 +71,3 @@ for (let f = 0; f < tebak.length; f++) {
 }
 
 console.log(ambil);
-

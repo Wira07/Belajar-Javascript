@@ -148,3 +148,14 @@ const Dasar = function () {
   let naruto = "Wira Sukma Saputra";
   console.log(naruto);
 };
+
+function india(nama, energy) {
+  this.nama = nama;
+  this.energy = energy;
+  this.day = function () {
+    console.log(`Halo nama saya ${this.nama} energy saya ${this.energy}`);
+  };
+}
+
+let badan = new india("Wira Sukma Saputra", 21);
+badan.day();
